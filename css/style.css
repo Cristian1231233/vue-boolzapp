@@ -65,7 +65,11 @@ body{
     height: 50px;
     border: 1px solid black;
     display: flex;
+    margin-left: 10px;
     
+}
+.imag-text .testo{
+    margin-left: 10px;
 }
 .imag-text .awesom{
     width: 40px;
@@ -154,6 +158,51 @@ body{
     width: 100%;
     height: 60px;
     border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contatto .contatto-scelto{
+    width: 98%;
+    height: 80%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.immage-testo-scelto{
+    width: 50%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+
+}
+.contatto .contatto-scelto .icone{
+    width: 15%;
+    height: 80%;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.immage-testo-scelto .image{
+    width: 35px;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.immage-testo-scelto .image img{
+    height: 100%;
+}
+.testo-scelto{
+    margin-left: 10px;
+}
+.altro-messag{
+    font-size: 13px;
+    color: gray;
 }
 .chat{
     width: 100%;
