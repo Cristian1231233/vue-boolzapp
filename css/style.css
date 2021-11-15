@@ -104,6 +104,47 @@ body{
     text-align: center;
     line-height: 30px;
 }
+.contatto1{
+    width: 98%;
+    height: 60px;
+    border: 1px solid rgb(184, 171, 171);
+    display: flex;
+    align-items: center;
+}
+.contatto1 .immagine-testo{
+    width: 94%;
+    height: 90%;
+    margin: auto;
+    border: 1px solid rgb(184, 171, 171);
+    display: flex;
+    position: relative;
+}
+.contatto1 .immagine-testo .immagine{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgb(184, 171, 171);
+    
+}
+
+.contatto1 .immagine-testo .immagine img{
+    height: 100%;
+}
+.contatto1 .testo .message{
+    font-size: 10px;
+    color: gray;
+}
+.contatto1 .testo{
+    margin-left: 10px;
+}
+.contatto1 .testo .data{
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
 .contatto-messag{
     width: calc(100% - 30%);
     position: relative;
