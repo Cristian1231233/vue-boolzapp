@@ -166,5 +166,31 @@ body{
     width: 100%;
     height: 60px;
     border: 1px solid black;
+    display: flex;
 }
-
+.search-awesome .smile{
+    width: 10%;
+    height: 100%;
+    background-color: #F3EEEA;
+    text-align: center;
+    line-height: 50px;
+}
+.search-awesome .barra-ricerca{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #F3EEEA;
+}
+.search-awesome .barra-ricerca .ricerca{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+.search-awesome .registrare{
+    width: 10%;
+    height: 100%;
+    background-color: #F3EEEA;
+    text-align: center;
+    line-height: 50px;
+}
