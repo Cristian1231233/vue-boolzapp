@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #D8DBD6;
+    height: 100vh;
+}
+.container-wrapper{
+    width: 80%;
+    min-height: 560px;
+    margin: 30px auto;
+    border: 1px solid black;
+    display: flex;
+}
+.slider{
+    width: 30%;
+    min-height: 560px;
+    border: 1px solid black;
+}
+.my-profile{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+}
+.imagine-text{
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    margin-top: 3px;
+}
+.contatto-messag{
+    width: calc(100% - 30%);
+    position: relative;
+
+}
+.contatto{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+}
+.chat{
+    width: 100%;
+    height: calc(100% - 120px);
+    border: 1px solid black;
+}
+.search-awesome{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+}
+
