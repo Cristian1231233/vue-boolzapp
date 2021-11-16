@@ -45,7 +45,7 @@
            </div>
            
        </div>
-       <div v-for="(contact, index) in contacts" class="contatto1">
+       <div @click="mostraContatto(index)" v-for="(contact, index) in contacts" class="contatto1">
            <div class="immagine-testo">
                <div class="immagine">
                    <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
@@ -101,10 +101,10 @@
                <div class="contatto-scelto">
                    <div class="immage-testo-scelto">
                        <div class="image">
-                           <img src="img/avatar_1.jpg" alt="">
+                           <img :src="`img/avatar${contacts[contattoAttivo].avatar}.jpg`" alt="">
                        </div>
                         <div class="testo-scelto">
-                           <div>Michele</div>
+                           <div>{{contacts[contattoAttivo].name}}</div>
                            <span class="altro-messag">Ultimo accesso oggi alle </span>
                         </div>
                         
@@ -133,20 +133,20 @@
            <div class="chat">
               <div class="contenitore-messaggi">
                   <div class="riga1">
-                      <div class="messaggio">
-                          <div class="messag1">Hai portato a spasso il cane?</div>
+                      <div class="messaggio sent">
+                          <div class="messag1">{{contacts[contattoAttivo].messages[contattoAttivo].message}}</div>
                           <span class="data2">11/01/2020 16:15:22</span>
                         </div>
                   </div>
                   <div class="riga2">
-                    <div class="messaggio2">
-                        <div class="messag2">Hai portato a spasso il cane?</div>
+                    <div class="messaggio2 sent">
+                        <div class="messag2">{{contacts[contattoAttivo].messages[contattoAttivo].message}}</div>
                         <span class="data3">11/01/2020 16:15:22</span>
                       </div>
                   </div>
                   <div class="riga3">
-                    <div class="messaggio3">
-                        <div class="messag3">Hai portato a spasso il cane?</div>
+                    <div class="messaggio3 received">
+                        <div class="messag3">{{contacts[contattoAttivo].messages[contattoAttivo].message}}</div>
                         <span class="data4">11/01/2020 16:15:22</span>
                       </div>
                   </div>

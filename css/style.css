@@ -191,7 +191,7 @@ body{
     align-items: center;
 }
 .immage-testo-scelto .image{
-    width: 35px;
+    width: 34px;
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
@@ -238,6 +238,16 @@ body{
     font-size: 15px;
     position: relative;
 }
+.messaggio.sent{
+    background-color: #D5FABB;
+    float: right;
+    clear: both;
+}
+.messaggio3.received{
+    background-color: #FFFFFF;
+    float: left;
+    clear: both;
+}
 .riga2 .messaggio2 .data3{
     position: absolute;
     right: 4px;
@@ -249,8 +259,6 @@ body{
     height: 40px;
     padding: 8px;
     border-radius: 10px;
-    background-color: #D5FABB;
-    float: right;
     font-size: 15px;
     position: relative;
 }
@@ -270,7 +278,6 @@ body{
     height: 40px;
     padding: 8px;
     border-radius: 10px;
-    background-color: #FFFFFF;
     font-size: 15px;
     position: relative;
 }

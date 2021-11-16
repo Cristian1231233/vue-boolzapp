@@ -2,12 +2,14 @@
 const app = new Vue({
     el: '#app',
     data: {
+        contattoAttivo: 0,
         contacts: [
             {
                 name: 'Michele',
                 avatar: '_1',
                 visible: true,
-                messages: [{
+                messages: [
+                    {
                     date: '10/01/2020 15:30:55',
                     message: 'Hai portato a spasso il cane?',
                     status: 'sent'
@@ -49,7 +51,8 @@ const app = new Vue({
                 name: 'Samuele',
                 avatar: '_3',
                 visible: true,
-                messages: [{
+                messages: [
+                    {
                     date: '28/03/2020 10:10:40',
                     message: 'La Marianna va in campagna',
                     status: 'received'
@@ -70,7 +73,8 @@ const app = new Vue({
                 name: 'Luisa',
                 avatar: '_4',
                 visible: true,
-                messages: [{
+                messages: [
+                    {
                     date: '10/01/2020 15:30:55',
                     message: 'Lo sai che ha aperto una nuova pizzeria?',
                     status: 'sent'
@@ -83,5 +87,11 @@ const app = new Vue({
                 ],
             },
         ]
+    },
+    methods: {
+        mostraContatto(index){
+            console.log('indice del contatto', index);
+            this.contattoAttivo = index;
+        }
     }
 })
