@@ -104,7 +104,7 @@ body{
 .awesom-search{
     width: 15%;
     height: 100%;
-    background-color: grey;
+    background-color: rgb(209, 190, 190);
     text-align: center;
     line-height: 30px;
 }
@@ -114,6 +114,9 @@ body{
     border: 1px solid rgb(184, 171, 171);
     display: flex;
     align-items: center;
+}
+.contatto1:hover{
+    background-color: rgb(240, 230, 230);
 }
 .contatto1 .immagine-testo{
     width: 94%;
@@ -208,6 +211,74 @@ body{
     width: 100%;
     height: calc(100% - 120px);
     border: 1px solid black;
+}
+.chat .contenitore-messaggi{
+    width: 75%;
+    height: 100%;
+    margin: 40px auto;
+    border: 1px solid black;
+}
+.chat .contenitore-messaggi .riga1{
+    width: 100%;
+    min-height: 49px;
+    border: 1px solid black;
+}
+.chat .contenitore-messaggi .riga2{
+    width: 100%;
+    min-height: 49px;
+    border: 1px solid black;
+}
+.riga2 .messaggio2{
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #D5FABB;
+    float: right;
+    font-size: 15px;
+    position: relative;
+}
+.riga2 .messaggio2 .data3{
+    position: absolute;
+    right: 4px;
+    font-size: 8px;
+    color: gray;
+}
+.riga1 .messaggio{
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #D5FABB;
+    float: right;
+    font-size: 15px;
+    position: relative;
+}
+.riga1 .messaggio .data2{
+    position: absolute;
+    right: 4px;
+    font-size: 8px;
+    color: gray;
+}
+.chat .contenitore-messaggi .riga3{
+    width: 100%;
+    min-height: 49px;
+    border: 1px solid black;
+}
+.riga3 .messaggio3{
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    position: relative;
+}
+.riga3 .messaggio3 .data4{
+    position: absolute;
+    right: 4px;
+    font-size: 8px;
+    color: gray;
 }
 .search-awesome{
     position: absolute;

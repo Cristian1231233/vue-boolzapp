@@ -9,6 +9,7 @@
     <title>Vue Boolzapp</title>
 </head>
 <body>
+    <div id="app">
     <div class="container-wrapper">
       <div class="slider">
         <div class="my-profile">
@@ -44,19 +45,19 @@
            </div>
            
        </div>
-       <div class="contatto1">
+       <div v-for="(contact, index) in contacts" class="contatto1">
            <div class="immagine-testo">
                <div class="immagine">
-                   <img src="img/avatar_1.jpg" alt="">
+                   <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
                </div>
                <div class="testo">
-                  <div>Michele</div>
+                  <div>{{contact.name}}</div>
                   <span class="message">Tutto fatto</span>
                   <div class="data">11/01/2020 16:15:22</div>
                </div>
            </div>
        </div>
-       <div class="contatto1">
+       <!-- <div class="contatto1">
         <div class="immagine-testo">
             <div class="immagine">
                 <img src="img/avatar_2.jpg" alt="">
@@ -67,8 +68,8 @@
                <div class="data">11/01/2020 16:15:22</div>
             </div>
         </div>
-    </div>
-    <div class="contatto1">
+    </div> -->
+    <!-- <div class="contatto1">
         <div class="immagine-testo">
             <div class="immagine">
                 <img src="img/avatar_3.jpg" alt="">
@@ -79,8 +80,8 @@
                <div class="data">11/01/2020 16:15:22</div>
             </div>
         </div>
-    </div>
-    <div class="contatto1">
+    </div> -->
+    <!-- <div class="contatto1">
         <div class="immagine-testo">
             <div class="immagine">
                 <img src="img/avatar_4.jpg" alt="">
@@ -91,7 +92,7 @@
                <div class="data">11/01/2020 16:15:22</div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
       </div>
@@ -130,7 +131,27 @@
            </div>
 
            <div class="chat">
-              
+              <div class="contenitore-messaggi">
+                  <div class="riga1">
+                      <div class="messaggio">
+                          <div class="messag1">Hai portato a spasso il cane?</div>
+                          <span class="data2">11/01/2020 16:15:22</span>
+                        </div>
+                  </div>
+                  <div class="riga2">
+                    <div class="messaggio2">
+                        <div class="messag2">Hai portato a spasso il cane?</div>
+                        <span class="data3">11/01/2020 16:15:22</span>
+                      </div>
+                  </div>
+                  <div class="riga3">
+                    <div class="messaggio3">
+                        <div class="messag3">Hai portato a spasso il cane?</div>
+                        <span class="data4">11/01/2020 16:15:22</span>
+                      </div>
+                  </div>
+              </div>  
+
            </div>
            <div class="search-awesome">
              <div class="smile">
@@ -145,8 +166,9 @@
            </div>
        </div>
     </div>
+</div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
