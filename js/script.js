@@ -1,8 +1,12 @@
 
 const app = new Vue({
     el: '#app',
+    mounted(){
+      console.log(this.contacts[0].messages);
+    },
     data: {
         contattoAttivo: 0,
+        colore:'',
         contacts: [
             {
                 name: 'Michele',
@@ -92,6 +96,9 @@ const app = new Vue({
         mostraContatto(index){
             console.log('indice del contatto', index);
             this.contattoAttivo = index;
+        },
+        sfondo(){
+            this.colore = 'grigio';
         }
     }
 })

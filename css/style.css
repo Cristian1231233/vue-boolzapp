@@ -134,6 +134,9 @@ body{
     border: 1px solid rgb(184, 171, 171);
     
 }
+.grigio{
+    background-color: rgb(141, 131, 131);
+}
 
 .contatto1 .immagine-testo .immagine img{
     height: 100%;
@@ -218,17 +221,17 @@ body{
     margin: 40px auto;
     border: 1px solid black;
 }
-.chat .contenitore-messaggi .riga1{
+.chat .contenitore-messaggi .riga{
     width: 100%;
     min-height: 49px;
     border: 1px solid black;
 }
-.chat .contenitore-messaggi .riga2{
+/* .chat .contenitore-messaggi .riga2{
     width: 100%;
     min-height: 49px;
     border: 1px solid black;
-}
-.riga2 .messaggio2{
+} */
+/* .riga2 .messaggio2{
     width: 200px;
     height: 40px;
     padding: 8px;
@@ -237,43 +240,44 @@ body{
     float: right;
     font-size: 15px;
     position: relative;
-}
+} */
 .messaggio.sent{
     background-color: #D5FABB;
     float: right;
     clear: both;
 }
-.messaggio3.received{
+.messaggio.received{
     background-color: #FFFFFF;
     float: left;
     clear: both;
 }
-.riga2 .messaggio2 .data3{
+/* .riga2 .messaggio2 .data3{
     position: absolute;
     right: 4px;
     font-size: 8px;
     color: gray;
-}
-.riga1 .messaggio{
-    width: 200px;
-    height: 40px;
+} */
+.riga .messaggio{
+    width: 230px;
+    height: 42px;
     padding: 8px;
     border-radius: 10px;
     font-size: 15px;
     position: relative;
 }
-.riga1 .messaggio .data2{
+.riga .messaggio .data{
     position: absolute;
     right: 4px;
+    bottom: 0;
     font-size: 8px;
     color: gray;
 }
-.chat .contenitore-messaggi .riga3{
+/* .chat .contenitore-messaggi .riga3{
     width: 100%;
     min-height: 49px;
     border: 1px solid black;
-}
-.riga3 .messaggio3{
+} */
+/* .riga3 .messaggio3{
     width: 200px;
     height: 40px;
     padding: 8px;
@@ -286,7 +290,7 @@ body{
     right: 4px;
     font-size: 8px;
     color: gray;
-}
+} */
 .search-awesome{
     position: absolute;
     bottom: 0;
