@@ -2,7 +2,7 @@
 const app = new Vue({
     el: '#app',
     mounted(){
-      console.log(this.contacts[0].messages);
+    //   console.log(this.contacts[0].messages);
     },
     data: {
         contattoAttivo: 0,
@@ -92,13 +92,13 @@ const app = new Vue({
             },
         ]
     },
-    methods: {
-        mostraContatto(index){
-            console.log('indice del contatto', index);
-            this.contattoAttivo = index;
-        },
-        sfondo(){
-            this.colore = 'grigio';
-        }
-    }
+    // methods: {
+    //     mostraContatto(index){
+    //         console.log('indice del contatto', index);
+    //         this.contattoAttivo = index;
+
+    //         this.colore = 'grigio';
+    //         console.log('grigio');
+    //     }
+    // }
 })

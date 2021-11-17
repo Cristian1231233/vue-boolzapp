@@ -45,20 +45,20 @@
            </div>
            
        </div>
-       <div @click="mostraContatto(index), sfondo" v-for="(contact, index) in contacts" class="contatto1" >
-           
-           <div class="immagine-testo">
+       <div @click="contattoAttivo = index" :class="{'grigio': contattoAttivo === index}" v-for="(contact, index) in contacts" class="contatto1">
+            
+           <div class="immagine-testo"  >
                <div class="immagine">
                    <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
                </div>
                <div class="testo">
                   <div>{{contact.name}}</div>
                   <span class="message">Tutto fatto</span>
-                  <div class="data">11/01/2020 16:15:22</div>
+                  <div class="data">data</div>
                </div>
            </div>
        </div>
-  
+       
        <!-- <div class="contatto1">
         <div class="immagine-testo">
             <div class="immagine">
@@ -107,7 +107,7 @@
                        </div>
                         <div class="testo-scelto">
                            <div>{{contacts[contattoAttivo].name}}</div>
-                           <span class="altro-messag">Ultimo accesso oggi alle </span>
+                           <span class="altro-messag">Ultimo accesso oggi alle</span>
                         </div>
                         
                    </div>
@@ -135,9 +135,9 @@
            <div class="chat">
               <div v-if="contattoAttivo >= 0" class="contenitore-messaggi">
                   <div v-for="(item, index) in contacts[contattoAttivo].messages" class="riga">
-                      <div class="messaggio sent">
+                    <div class="messaggio" :class="{'sent': item.status == 'sent', 'received': item.status == 'received' }"> 
                           <div class="messag">{{item.message}}</div>
-                          <span class="data">11/01/2020 16:15:22</span>
+                          <span class="data">{{item.date}}</span>
                      </div>
                   </div>
                 </div>

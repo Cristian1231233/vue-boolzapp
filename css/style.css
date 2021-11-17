@@ -116,7 +116,7 @@ body{
     align-items: center;
 }
 .contatto1:hover{
-    background-color: rgb(240, 230, 230);
+    background-color: rgb(245, 220, 220);
 }
 .contatto1 .immagine-testo{
     width: 94%;
@@ -135,7 +135,7 @@ body{
     
 }
 .grigio{
-    background-color: rgb(141, 131, 131);
+    background-color: rgb(207, 193, 193);
 }
 
 .contatto1 .immagine-testo .immagine img{
@@ -241,12 +241,12 @@ body{
     font-size: 15px;
     position: relative;
 } */
-.messaggio.sent{
+.sent{
     background-color: #D5FABB;
     float: right;
     clear: both;
 }
-.messaggio.received{
+.received{
     background-color: #FFFFFF;
     float: left;
     clear: both;
