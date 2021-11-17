@@ -90,15 +90,57 @@ const app = new Vue({
                     }
                 ],
             },
-        ]
+        ],
+        newMessag: {
+            date: '',
+            message: '',
+            status: ''
+        },
+        risposta: {
+            date: '',
+            message: '',
+            status: ''
+        }
     },
-    // methods: {
-    //     mostraContatto(index){
-    //         console.log('indice del contatto', index);
-    //         this.contattoAttivo = index;
+    methods: {
+        insertMessag(){
+            this.newMessag.status = 'sent';
+            this.contacts[this.contattoAttivo].messages.push(this.newMessag);
+            
+            this.newMessag = {
+                date: '',
+                message: '',
+                status: ''
+            },
+            this.contacts[this.contattoAttivo].messages.push(this.risposta);
+            
+            setTimeout(rispostaMessag, 3000);
+                this.risposta.message = 'Ok'
+                this.risposta.status = 'received';
+                    
+                function rispostaMessag() {
+                    
+                    this.risposta = {
+                        date: '',
+                        message: '',
+                        status: ''
+                    }
+                }
+                
+            
+            
+            
 
-    //         this.colore = 'grigio';
-    //         console.log('grigio');
-    //     }
-    // }
+        
+    }
+    }
 })
+// methods: {
+//     mostraContatto(index){
+//         console.log('indice del contatto', index);
+//         this.contattoAttivo = index;
+
+//         this.colore = 'grigio';
+//         console.log('grigio');
+//     }
+// }

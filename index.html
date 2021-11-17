@@ -135,7 +135,7 @@
            <div class="chat">
               <div v-if="contattoAttivo >= 0" class="contenitore-messaggi">
                   <div v-for="(item, index) in contacts[contattoAttivo].messages" class="riga">
-                    <div class="messaggio" :class="{'sent': item.status == 'sent', 'received': item.status == 'received' }"> 
+                    <div class="messaggio" :class="item.status"> 
                           <div class="messag">{{item.message}}</div>
                           <span class="data">{{item.date}}</span>
                      </div>
@@ -180,7 +180,9 @@
                 <i class="far fa-smile"></i>
              </div>
              <div class="barra-ricerca">
-                 <input class="ricerca" type="text" placeholder="scrivi un messaggio"> 
+                 <input v-model="newMessag.message"
+                 @keyup.enter="insertMessag" 
+                  class="ricerca" type="text" placeholder="scrivi un messaggio"> 
              </div>
              <div class="registrare">
                 <i class="fas fa-microphone"></i>
