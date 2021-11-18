@@ -104,6 +104,7 @@ const app = new Vue({
     },
     methods: {
         insertMessag(){
+            this.newMessag.date = '10/01/2020 15:50:00';
             this.newMessag.status = 'sent';
             this.contacts[this.contattoAttivo].messages.push(this.newMessag);
             
@@ -114,18 +115,25 @@ const app = new Vue({
             },
             this.contacts[this.contattoAttivo].messages.push(this.risposta);
             
-            setTimeout(rispostaMessag, 3000);
-                this.risposta.message = 'Ok'
+                
+              setTimeout(() => {
+                this.risposta.message = 'Ok';
                 this.risposta.status = 'received';
+                this.risposta.date = '10/01/2020 15:50:00';
+              }, 1000);
+                
+                    // this.risposta.message = 'Ok'
+                    // this.risposta.status = 'received';
+                   
+            
+                // function rispostaMessag() {
                     
-                function rispostaMessag() {
-                    
-                    this.risposta = {
-                        date: '',
-                        message: '',
-                        status: ''
-                    }
-                }
+                //     this.risposta = {
+                //         date: '',
+                //         message: '',
+                //         status: ''
+                //     }
+                // }
                 
             
             

@@ -6,28 +6,30 @@
 
 
 body{
-    background-color: #D8DBD6;
+    
+    background-image: linear-gradient( #009688 20vh, #D8DBD6 3vh);
     height: 100vh;
 }
 .container-wrapper{
     width: 80%;
+    min-width: 700px;
     min-height: 560px;
     margin: 30px auto;
-    border: 1px solid black;
     display: flex;
 }
 .slider{
     width: 40%;
     min-height: 560px;
-    border: 1px solid black;
+    background-color: white;
 }
 .my-profile{
     width: 100%;
     height: 60px;
-    border: 1px solid black;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #EAEAEA;
+    border-right: 1px solid rgb(172, 161, 161);
 }
 .imagine-text{
     min-width: 60%;
@@ -39,7 +41,6 @@ body{
 .imagine-text .image{
     width: 50px;
     height: 100%;
-    border: 1px solid black;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -63,7 +64,6 @@ body{
 .notify .imag-text{
     width: 70%;
     height: 50px;
-    border: 1px solid black;
     display: flex;
     margin-left: 10px;
     
@@ -74,7 +74,6 @@ body{
 .imag-text .awesom{
     width: 40px;
     height: 40px;
-    border: 1px solid black;
     border-radius: 50%;
     margin-left: 2px;
     text-align: center;
@@ -100,6 +99,7 @@ body{
 }
 .symbol-barra-ricerca .barra{
     width: 100%;
+    border-left: none;
 }
 .awesom-search{
     width: 15%;
@@ -108,10 +108,16 @@ body{
     text-align: center;
     line-height: 30px;
 }
+.awesom-search .fa-search{
+    width: 100%;
+    height: 100%;
+    padding-top: 6px;
+    background-color: white;
+}
 .contatto1{
     width: 98%;
     height: 60px;
-    border: 1px solid rgb(184, 171, 171);
+    border: .5px solid rgb(209, 199, 199);
     display: flex;
     align-items: center;
 }
@@ -122,7 +128,6 @@ body{
     width: 94%;
     height: 90%;
     margin: auto;
-    border: 1px solid rgb(184, 171, 171);
     display: flex;
     position: relative;
 }
@@ -131,7 +136,6 @@ body{
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid rgb(184, 171, 171);
     
 }
 .grigio{
@@ -163,15 +167,14 @@ body{
 .contatto{
     width: 100%;
     height: 60px;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #EAEAEA;
 }
 .contatto .contatto-scelto{
     width: 98%;
     height: 80%;
-    border: 1px solid black;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -181,7 +184,7 @@ body{
 .immage-testo-scelto{
     width: 50%;
     height: 80%;
-    border: 1px solid black;
+
     display: flex;
 
 }
@@ -195,10 +198,9 @@ body{
 }
 .immage-testo-scelto .image{
     width: 34px;
-    height: 100%;
+    height: 34px;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid black;
 }
 .immage-testo-scelto .image img{
     height: 100%;
@@ -213,18 +215,17 @@ body{
 .chat{
     width: 100%;
     height: calc(100% - 120px);
-    border: 1px solid black;
+    overflow-y: auto;
+    background-color: rgb(233, 210, 210);
 }
 .chat .contenitore-messaggi{
     width: 75%;
     height: 100%;
     margin: 40px auto;
-    border: 1px solid black;
 }
 .chat .contenitore-messaggi .riga{
     width: 100%;
     min-height: 49px;
-    border: 1px solid black;
 }
 /* .chat .contenitore-messaggi .riga2{
     width: 100%;
@@ -296,7 +297,6 @@ body{
     bottom: 0;
     width: 100%;
     height: 60px;
-    border: 1px solid black;
     display: flex;
 }
 .search-awesome .smile{
