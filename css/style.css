@@ -6,15 +6,15 @@
 
 
 body{
-    
-    background-image: linear-gradient( #009688 20vh, #D8DBD6 3vh);
+    background-image: linear-gradient( #009688 20%, #D8DBD6 3vh);
     height: 100vh;
+    overflow: hidden;
 }
 .container-wrapper{
     width: 80%;
-    min-width: 700px;
+    min-width: 790px;
     min-height: 560px;
-    margin: 30px auto;
+    margin: 40px auto;
     display: flex;
 }
 .slider{
@@ -34,13 +34,16 @@ body{
 .imagine-text{
     min-width: 60%;
     height: 50px;
-    background-color: green;
     display: flex;
     align-items: center;
 }
+.imagine-text .text{
+    margin-left: 10px;
+}
 .imagine-text .image{
-    width: 50px;
-    height: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -50,14 +53,15 @@ body{
 .info{
     width: 100px;
     height: 50px;
-    background-color: green;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    color: rgb(168, 154, 154);
 }
 .notify{
     width: 100%;
     height: 60px;
-    background-color: cadetblue;
+    background-color: #88D9FA;
     display: flex;
     align-items: center;
 }
@@ -66,7 +70,6 @@ body{
     height: 50px;
     display: flex;
     margin-left: 10px;
-    
 }
 .imag-text .testo{
     margin-left: 10px;
@@ -79,6 +82,9 @@ body{
     text-align: center;
     line-height: 40px;
     background-color: white;
+}
+.awesom .fa-bell-slash{
+    color: #88D9FA;
 }
 .imag-text .notifica{
     font-size: 13px;
@@ -94,7 +100,6 @@ body{
     width: 95%;
     height: 80%;
     margin: auto;
-    background-color: green;
     display: flex;
 }
 .symbol-barra-ricerca .barra{
@@ -126,7 +131,7 @@ body{
 }
 .contatto1 .immagine-testo{
     width: 94%;
-    height: 90%;
+    height: 72%;
     margin: auto;
     display: flex;
     position: relative;
@@ -146,7 +151,7 @@ body{
     height: 100%;
 }
 .contatto1 .testo .message{
-    font-size: 10px;
+    font-size: 13px;
     color: gray;
 }
 .contatto1 .testo{
@@ -191,10 +196,10 @@ body{
 .contatto .contatto-scelto .icone{
     width: 15%;
     height: 80%;
-    background-color: green;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: rgb(168, 154, 154);
 }
 .immage-testo-scelto .image{
     width: 34px;
@@ -260,11 +265,12 @@ body{
 } */
 .riga .messaggio{
     width: 230px;
-    height: 42px;
+    min-height: 42px;
     padding: 8px;
     border-radius: 10px;
     font-size: 15px;
     position: relative;
+    overflow: hidden;
 }
 .riga .messaggio .data{
     position: absolute;

@@ -103,6 +103,13 @@ const app = new Vue({
         }
     },
     methods: {
+        ultimMessg(index){
+            let ultimoMessaggio = this.contacts[index].messages[this.contacts[index].messages.length - 1].message;
+            if(ultimoMessaggio.length > 30){
+                ultimoMessaggio = ultimoMessaggio.substr(0,30) + '...';
+            }
+            return ultimoMessaggio;
+        },
         insertMessag(){
             this.newMessag.date = '10/01/2020 15:50:00';
             this.newMessag.status = 'sent';
