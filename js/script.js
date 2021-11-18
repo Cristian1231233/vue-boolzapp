@@ -103,6 +103,12 @@ const app = new Vue({
         }
     },
     methods: {
+        ricercaContact(){
+           console.log('ciao');
+        //    if(ricercaContact().includes(this.contacts.name)){
+        //      console.log('visible');
+        //    }
+        },
         ultimMessg(index){
             let ultimoMessaggio = this.contacts[index].messages[this.contacts[index].messages.length - 1].message;
             if(ultimoMessaggio.length > 30){
@@ -111,7 +117,7 @@ const app = new Vue({
             return ultimoMessaggio;
         },
         insertMessag(){
-            this.newMessag.date = '10/01/2020 15:50:00';
+            this.newMessag.date = dayjs().format('DD/MM/YYYY HH:mm:ss');
             this.newMessag.status = 'sent';
             this.contacts[this.contattoAttivo].messages.push(this.newMessag);
             
@@ -126,7 +132,7 @@ const app = new Vue({
               setTimeout(() => {
                 this.risposta.message = 'Ok';
                 this.risposta.status = 'received';
-                this.risposta.date = '10/01/2020 15:50:00';
+                this.risposta.date = dayjs().format('DD/MM/YYYY HH:mm:ss');
               }, 1000);
                 
                     // this.risposta.message = 'Ok'
